@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CRUD Corte 4</title>
+
+    <!-- BOOTSWATCH (INTERFAZ) -->
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cyborg/bootstrap.min.css"
+    />
+</head>
+
+<body class="bg-dark">
+<nav class="nnavbar navbar-expand-sm bg-light navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">REGISTRO</a>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <a class="nav-link" href="index.html">Estudiantes Y Cursos</a>
+            <a class="nav-link" href="Registro.html">Registrar</a>
+        </ul>
+    </div>
+</nav>
+<!-- ADD TASK -->
+<div class="container pt-4 pl-2 pr-2">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="h4">Registrar</h1>
+
+                    <form id="registro-form">
+                        <label for="students-dropdown">Estudiante:</label>
+                        <select name="student-id" id="students-dropdown" class="form-select mb-3">
+                        </select>
+
+                        <label for="classes-dropdown">Clase:</label>
+                        <select name="class-id" id="classes-dropdown" class="form-select mb-3">
+                        </select>
+
+                        <button style="background-color:orange" class="btn btn-primary" id="btn-registro-form">Guardar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div id="enrollment-container"></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="./Registro.js" type="module"></script>
+</body>
+</html>
